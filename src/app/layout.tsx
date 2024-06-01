@@ -22,8 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} bg-dark-himti`}>
-        <NavigationBar />
-        <main className="w-full max-w-[1400px] flex mx-auto -mt-20">
+        <main className="w-full max-w-[1400px] flex mx-auto mt-12">
           {children}
         </main>
       </body>
