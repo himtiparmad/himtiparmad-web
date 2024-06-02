@@ -2,6 +2,7 @@ import Image from "next/image";
 import Hero from "@/assets/images/hero.png";
 import Button from "@/components/button";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import SectionEvent from "@/components/event";
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
           />
         </div>
       </div>
+      <SectionEvent/>
     </div>
   );
 }
