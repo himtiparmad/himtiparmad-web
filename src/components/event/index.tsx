@@ -1,9 +1,9 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { Icon } from "@iconify/react";
 
 interface EventImageProps {
-  src: string;
+  src: string | StaticImageData;
   alt: string;
   title: string;
 }
@@ -16,15 +16,15 @@ const EventImage: React.FC<EventImageProps> = ({ src, alt, title }) => {
         alt={alt}
         width={610}
         height={400}
-        objectFit="cover"
-        className="rounded-lg"
+        className="rounded-lg object-cover bg-cover w-full h-[400px]"
       />
-      <div className="absolute inset-0 bg-dark-himti bg-opacity-45 flex items-end p-4">
-        <p className="text-lg font-normal text-brand-main">{title}</p>
+      <div className="absolute inset-0 bg-opacity-45 flex items-end p-4 bg-gradient-to-b from-transparent to-dark-himti">
+        <p className="text-2xl font-normal text-brand-main">{title}</p>
       </div>
       <div className="absolute bottom-4 right-4">
         <div className="w-14 h-14 bg-dark-himti flex items-center justify-center rounded">
-          <Icon href="/events"
+          <Icon
+            href="/events"
             icon={"material-symbols:arrow-right-alt"}
             className="w-6 h-6 transform rotate-[-45deg] text-brand-main"
           />

@@ -17,7 +17,7 @@ export default function Home() {
           height={900}
           className="w-full h-full object-cover bg-cover rounded-xl"
         />
-        <div className="absolute inset-0 flex flex-col items-start justify-end text-white text-center bg-black bg-opacity-50 px-16 pb-12">
+        <div className="absolute inset-0 flex flex-col items-start justify-end text-white text-center bg-opacity-50 px-16 pb-12">
           <p className="text-2xl">
             # A <span className="text-brand-main">Team</span> Like No Other
           </p>
@@ -38,16 +38,22 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="mt-12 px-16 text-white">
+      <div className="mt-28 px-16 text-white">
         <div className="flex justify-between items-center mb-8">
           <div>
-            <h2 className="text-[40px] font-normal text-brand-main">Upcoming Events</h2>
+            <h2 className="text-[40px] leading-[130%] font-normal text-brand-main">
+              Upcoming Events
+            </h2>
             <p className="text-base mt-2 font-normal text-dark-dark">
-              Here are some events that will be held by HIMTI Paramadina in the near future
+              Here are some events that will be held by HIMTI Paramadina in the
+              near future
             </p>
           </div>
           <div className="flex items-center">
-            <a href="/events" className="text-brand-main text-base font-normal flex items-center">
+            <a
+              href="/events"
+              className="text-brand-main text-base font-normal flex items-center"
+            >
               see all events
               <Icon
                 icon={"material-symbols:arrow-right-alt"}
@@ -57,7 +63,11 @@ export default function Home() {
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <EventImage src={event1} alt="HIMTI IT Fest Competition 4.0" title="HIMTI IT Fest Competition 4.0" />
+          <EventImage
+            src={event1}
+            alt="HIMTI IT Fest Competition 4.0"
+            title="HIMTI IT Fest Competition 4.0"
+          />
           <EventImage src={event2} alt="HIMTI GO!" title="HIMTI GO!" />
         </div>
       </div>
