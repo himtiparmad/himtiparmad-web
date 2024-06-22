@@ -18,20 +18,22 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
   href,
 }) => {
   return (
-    <div className="flex items-center">
-      <div className="w-1/2">
-        <Image
-          src={src}
-          alt={alt}
-          width={190}
-          height={190}
-          className="rounded-md"
-        />
-      </div>
+    <div className="flex gap-6">
+      <Image
+        src={src}
+        alt={alt}
+        width={190}
+        height={190}
+        className="rounded-md bg-white bg-opacity-5 p-16"
+      />
 
-      <div className="w-1/2">
-        <h2 className="text-xl font-semibold text-brand-main mb-2">{title}</h2>
-        <p className="text-base text-dark-dark pb-[98px]">{description}</p>
+      <div className="flex flex-col justify-between">
+        <div>
+          <h2 className="text-xl font-semibold text-light-main mb-2">
+            {title}
+          </h2>
+          <p className="text-base text-[#797979]">{description}</p>
+        </div>
         <Link href={href} legacyBehavior>
           <a className="text-brand-main flex items-center">
             Read more

@@ -10,7 +10,7 @@ interface EventImageProps {
 
 const EventImage: React.FC<EventImageProps> = ({ src, alt, title }) => {
   return (
-    <div className="relative w-[610px] h-[400px]">
+    <div className="relative w-full h-[400px]">
       <Image
         src={src}
         alt={alt}
