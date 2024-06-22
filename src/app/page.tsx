@@ -44,7 +44,7 @@ export default function Home() {
       </div>
 
       <div className="mt-28 px-11 text-white">
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex justify-between items-center">
           <div>
             <h2 className="text-[40px] leading-[130%] font-normal text-brand-main">
               Upcoming Events
@@ -67,7 +67,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="w-full flex flex-row gap-6">
+        <div className="w-full flex flex-row gap-6 mt-14">
           <EventImage
             src={event1}
             alt="HIMTI IT Fest Competition 4.0"
@@ -101,7 +101,9 @@ export default function Home() {
                   >
                     see all articles
                   </Link>
-                  <p className="text-base text-[#797979]">read more articles</p>
+                  <p className="text-base text-[#797979] italic">
+                    read more articles
+                  </p>
                 </div>
               );
             }
@@ -111,7 +113,7 @@ export default function Home() {
                 src={BlogIcon}
                 alt="blog"
                 title="Lorem Ipsum"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In malesuada, libero et varius."
+                author="Author Placeholder | Month XX, 20XX"
                 href="/articles"
               />
             );
@@ -142,6 +144,21 @@ export default function Home() {
           })}
         </div>
       </div>
+
+      <div className="px-11 mt-20">
+        <h4 className="text-xl text-[#3A3A3C]">in copoperation with</h4>
+        <div className="grid grid-cols-4 gap-5 mt-16">
+          {[1, 2, 3, 4].map((index) => {
+            return (
+              <div
+                key={index}
+                className="bg-white bg-opacity-5 w-full h-52 rounded-md"
+              ></div>
+            );
+          })}
+        </div>
+      </div>
+
       <div className="px-11 mt-36">
         <h3 className="text-brand-main text-4xl justify-center text-center">
           <span className="text-brand-dark">Have Questions About HIMTI?</span>{" "}

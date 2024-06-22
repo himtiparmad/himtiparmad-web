@@ -6,7 +6,7 @@ interface ArticleCardProps {
   src: string;
   alt: string;
   title: string;
-  description: string;
+  author: string;
   href: string;
 }
 
@@ -14,7 +14,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
   src,
   alt,
   title,
-  description,
+  author,
   href,
 }) => {
   return (
@@ -32,7 +32,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
           <h2 className="text-xl font-semibold text-light-main mb-2">
             {title}
           </h2>
-          <p className="text-base text-[#797979]">{description}</p>
+          <p className="text-base text-[#797979] italic">{author}</p>
         </div>
         <Link href={href} legacyBehavior>
           <a className="text-brand-main flex items-center">
