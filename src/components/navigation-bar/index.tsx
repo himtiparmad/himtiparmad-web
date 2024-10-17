@@ -29,6 +29,10 @@ const nav = [
     name: "FAQs",
     href: "/faqs",
   },
+  {
+    name: "HIMTI KMS",
+    href: "/kms",
+  },
 ];
 
 const NavigationBar = () => {

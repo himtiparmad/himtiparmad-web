@@ -9,6 +9,8 @@ import ArticleCard from "@/components/article";
 import BlogIcon from "@/assets/icons/blog.svg";
 import Link from "next/link";
 import Programs from "@/components/programs";
+import { featuredData } from "./_data/featured_data";
+import { CardCooperation } from "@/components/card/card-cooperation";
 
 export default function Home() {
   return (
@@ -87,44 +89,57 @@ export default function Home() {
           Contains the latest information and technology, including hot
           technology issues
         </p>
-        <div className="grid lg:grid-cols-2 gap-x-6 gap-y-8 py-6 mt-16">
-          {[1, 2, 3, 4, 5, 6].map((index) => {
-            if (index === 6) {
-              return (
-                <div
-                  key={index}
-                  className="flex flex-col items-center justify-center"
-                >
-                  <Link
-                    href="/articles"
-                    className="text-brand-main text-xl font-normal flex items-center"
-                  >
-                    see all articles
-                  </Link>
-                  <p className="text-base text-[#797979] italic">
-                    read more articles
-                  </p>
-                </div>
-              );
-            }
-            return (
-              <ArticleCard
-                key={index}
-                src={BlogIcon}
-                alt="blog"
-                title="Lorem Ipsum"
-                author="Author Placeholder | Month XX, 20XX"
-                href="/articles"
-              />
-            );
-          })}
+        <div className="grid grid-cols-1 mt-16 divide-y-2 divide-dark-main border-y-2 border-dark-main">
+          {[1, 2, 3, 4, 5, 6]
+            .reduce<number[][]>((result, _, index, array) => {
+              // Memecah array menjadi sub-array berisi 2 elemen
+              if (index % 2 === 0) {
+                result.push(array.slice(index, index + 2));
+              }
+              return result;
+            }, [])
+            .map((pair, index) => (
+              <div key={index} className="flex flex-row justify-between py-6">
+                {pair.map((num) => {
+                  if (num === 6) {
+                    return (
+                      <div
+                        key={num}
+                        className="w-1/2 flex flex-col items-center justify-center"
+                      >
+                        <Link
+                          href="/articles"
+                          className="text-brand-main text-xl font-normal flex items-center"
+                        >
+                          see all articles
+                        </Link>
+                        <p className="text-base text-[#797979] italic">
+                          read more articles
+                        </p>
+                      </div>
+                    );
+                  }
+                  return (
+                    <div key={num} className="w-1/2">
+                      <ArticleCard
+                        src={BlogIcon}
+                        alt="blog"
+                        title="Lorem Ipsum"
+                        author="Author Placeholder | Month XX, 20XX"
+                        href="/articles"
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            ))}
         </div>
       </div>
 
       <div className="px-11 mt-32">
         <div className="flex flex-col items-center">
           <h3 className="text-brand-main text-4xl justify-center text-center">
-            Our Programs
+            Featured Programs
           </h3>
           <p className="w-3/5 text-dark-dark justify-center text-center pt-6">
             HIMTI has several work program agendas (proker) every year. This
@@ -133,29 +148,34 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-col gap-6 mt-16">
-          {[1, 2, 3, 4, 5, 6].map((index) => {
+          {featuredData.map((item, index) => {
             return (
               <Programs
                 key={index}
-                title="HIMTI IT Fest Competition 4.0"
-                href="/programs"
+                title={item.name}
+                href={item.href}
+                backgroundColor="white"
               />
             );
           })}
+          <Programs
+            title="Explore our programs"
+            href="/programs"
+            backgroundColor="green"
+          />
         </div>
       </div>
 
       <div className="px-11 mt-20">
-        <h4 className="text-xl text-[#3A3A3C]">in copoperation with</h4>
+        <h4 className="text-xl text-[#3A3A3C]">in cooperation with</h4>
         <div className="grid grid-cols-4 gap-5 mt-16">
-          {[1, 2, 3, 4].map((index) => {
-            return (
-              <div
-                key={index}
-                className="bg-white bg-opacity-5 w-full h-52 rounded-md"
-              ></div>
-            );
-          })}
+          <CardCooperation
+            image="/images/logo/paramadina.png"
+            alt="paramadina"
+          />
+          <CardCooperation image="/images/logo/fir.png" alt="fir" />
+          <CardCooperation image="/images/logo/ti.png" alt="ti" />
+          <CardCooperation image="/images/logo/sema.png" alt="sema" />
         </div>
       </div>
 
