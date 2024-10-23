@@ -51,16 +51,15 @@ const NavigationBar = () => {
         </div>
         <ul className="flex flex-row items-center justify-between bg-dark-himti w-full h-20 p-3 gap-2 rounded-lg mx-3">
           {nav.map((item, index) => (
-            <li
+            <Link
               className={`${
                 isActive(item.href) ? "border-brand-main border " : ""
               } w-full h-full flex items-center justify-center rounded-lg`}
+              href={item.href}
               key={index}
             >
-              <a href={item.href} className="text-brand-main">
-                {item.name}
-              </a>
-            </li>
+              <li className="text-brand-main">{item.name}</li>
+            </Link>
           ))}
         </ul>
         <div className="bg-dark-himti w-1/6 px-5 h-20 rounded-lg flex gap-1 items-center justify-center">

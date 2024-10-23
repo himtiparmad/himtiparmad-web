@@ -19,22 +19,24 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
 }) => {
   return (
     <div className="flex gap-6">
-      <Image
-        src={src}
-        alt={alt}
-        width={190}
-        height={190}
-        className="rounded-md bg-white bg-opacity-5 p-16"
-      />
+      <Link href={href}>
+        <Image
+          src={src}
+          alt={alt}
+          width={190}
+          height={190}
+          className="rounded-md bg-white bg-opacity-5 p-16"
+        />
+      </Link>
 
-      <div className="flex flex-col justify-between">
+      <Link href={href} className="flex flex-col justify-between">
         <div>
           <h2 className="text-xl font-semibold text-light-main mb-2">
             {title}
           </h2>
           <p className="text-base text-[#797979] italic">{author}</p>
         </div>
-        <Link href={href} legacyBehavior>
+        <div>
           <a className="text-brand-main flex items-center">
             Read more
             <Icon
@@ -42,8 +44,8 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
               className="w-6 h-6 ml-2 transform rotate-[-45deg]"
             />
           </a>
-        </Link>
-      </div>
+        </div>
+      </Link>
     </div>
   );
 };

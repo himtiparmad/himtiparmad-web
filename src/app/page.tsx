@@ -72,10 +72,11 @@ export default function Home() {
         <div className="w-full flex flex-row gap-6 mt-14">
           <EventImage
             src={event1}
+            href="/events"
             alt="HIMTI IT Fest Competition 4.0"
             title="HIMTI IT Fest Competition 4.0"
           />
-          <EventImage src={event2} alt="HIMTI GO!" title="HIMTI GO!" />
+          <EventImage src={event2} href="/" alt="HIMTI GO!" title="HIMTI GO!" />
         </div>
       </div>
 

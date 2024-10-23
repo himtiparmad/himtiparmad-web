@@ -13,15 +13,16 @@ const Programs: React.FC<ProgramsProps> = ({
   backgroundColor,
 }) => {
   return (
-    <div
+    <Link
+      href={href}
       className={`w-full  p-6 flex flex-row items-center justify-between rounded-lg ${
         backgroundColor === "green" ? "bg-brand-main" : "bg-white bg-opacity-5"
       }`}
     >
-      <Link href={href}>
+      <div>
         <p className="text-4xl text-light-main">{title}</p>
-      </Link>
-      <Link href={href}>
+      </div>
+      <div>
         <Icon
           href={href}
           icon={"material-symbols:arrow-right-alt"}
@@ -29,8 +30,8 @@ const Programs: React.FC<ProgramsProps> = ({
             backgroundColor === "green" ? "text-white" : "text-brand-main"
           }`}
         />
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 };
 

@@ -1,16 +1,18 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import { Icon } from "@iconify/react";
+import Link from "next/link";
 
 interface EventImageProps {
   src: string | StaticImageData;
   alt: string;
   title: string;
+  href: string;
 }
 
-const EventImage: React.FC<EventImageProps> = ({ src, alt, title }) => {
+const EventImage: React.FC<EventImageProps> = ({ src, alt, title, href }) => {
   return (
-    <div className="relative w-full h-[400px]">
+    <Link href={href} className="relative w-full h-[400px]">
       <Image
         src={src}
         alt={alt}
@@ -30,7 +32,7 @@ const EventImage: React.FC<EventImageProps> = ({ src, alt, title }) => {
           />
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
