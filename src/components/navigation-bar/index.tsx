@@ -38,31 +38,42 @@ const nav = [
 
 const NavigationBar = () => {
   const pathname = usePathname();
-  const [isHimtipedia, setIsHimtipedia] = useState(false); 
+  const [isHimtipedia, setIsHimtipedia] = useState(false);
 
   const isActive = (href: string) => {
     return pathname === href;
   };
 
-
   useEffect(() => {
     setIsHimtipedia(pathname === "/himtipedia");
     if (pathname === "/himtipedia") {
-      document.body.style.backgroundColor = "#EBEBF0"; 
+      document.body.style.backgroundColor = "#EBEBF0";
     } else {
-      document.body.style.backgroundColor = ""; 
+      document.body.style.backgroundColor = "";
     }
   }, [pathname]);
 
   return (
-    <nav className={`w-full max-w-[1360px] mx-auto gap-x-5 z-50 sticky -top-10 ${isHimtipedia ? "bg-gray-50" : "bg-dark-himti"}`}>
+    <nav
+      className={`w-full max-w-[1360px] mx-auto gap-x-5 z-50 sticky -top-10 ${
+        isHimtipedia ? "bg-gray-50" : "bg-dark-himti"
+      }`}
+    >
       <div className="w-full flex flex-row items-center justify-between absolute pt-5 mt-10">
-        <div className={`w-1/6 px-10 h-20 rounded-lg flex items-center justify-center ${isHimtipedia ? "bg-gray-50" : "bg-dark-himti"}`}>
+        <div
+          className={`w-1/6 px-10 h-20 rounded-lg flex items-center justify-center ${
+            isHimtipedia ? "bg-gray-50" : "bg-dark-himti"
+          }`}
+        >
           <Link href={"/"}>
             <Image src={"/images/logo.svg"} width={80} height={36} alt="logo" />
           </Link>
         </div>
-        <ul className={`flex flex-row items-center justify-between w-full h-20 p-3 gap-2 rounded-lg mx-3 ${isHimtipedia ? "bg-gray-50" : "bg-dark-himti"}`}>
+        <ul
+          className={`flex flex-row items-center justify-between w-full h-20 p-3 gap-2 rounded-lg mx-3 ${
+            isHimtipedia ? "bg-gray-50" : "bg-dark-himti"
+          }`}
+        >
           {nav.map((item, index) => (
             <Link
               className={`${
@@ -71,16 +82,18 @@ const NavigationBar = () => {
               href={item.href}
               key={index}
             >
-              <Link href={item.href} className={`text-brand-main ${isHimtipedia ? "text-dark" : "text-white"}`}>
-                {item.name}
-              </Link>
-            </li>
+              <li className="text-brand-main">{item.name}</li>
+            </Link>
           ))}
         </ul>
-        <div className={`w-1/6 px-5 h-20 rounded-lg flex gap-1 items-center justify-center ${isHimtipedia ? "bg-gray-50" : "bg-dark-himti"}`}>
+        <div
+          className={`w-1/6 px-5 h-20 rounded-lg flex gap-1 items-center justify-center ${
+            isHimtipedia ? "bg-gray-50" : "bg-dark-himti"
+          }`}
+        >
           <Link
             href={"#"}
-            className={`text-brand-main flex flex-row gap-1 items-center ${isHimtipedia ? "text-dark" : "text-white"}`}
+            className="text-brand-main flex flex-row gap-1 items-center"
           >
             <Icon
               icon={"material-symbols:arrow-right-alt"}
