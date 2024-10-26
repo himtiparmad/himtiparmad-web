@@ -47,7 +47,7 @@ const NavigationBar = () => {
   useEffect(() => {
     setIsHimtipedia(pathname.startsWith("/himtipedia"));
     if (pathname.startsWith("/himtipedia")) {
-      document.body.style.backgroundColor = "#EBEBF0";
+      document.body.style.backgroundColor = "#F8F8F8";
     } else {
       document.body.style.backgroundColor = "";
     }
@@ -56,7 +56,7 @@ const NavigationBar = () => {
   return (
     <nav
       className={`w-full max-w-[1360px] mx-auto gap-x-5 z-50 sticky -top-10 ${
-        isHimtipedia ? "bg-gray-50" : "bg-dark-himti"
+        isHimtipedia ? "bg-white" : "bg-dark-himti"
       }`}
     >
       <div className="w-full flex flex-row items-center justify-between absolute pt-5 mt-10">

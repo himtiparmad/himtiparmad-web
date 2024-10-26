@@ -52,10 +52,11 @@ const Footer = () => {
       <div className="w-1/2 flex justify-end items-start">
         <Image
           src="/images/logo.svg"
-          width={80}
-          height={36}
+          width={0}
+          height={0}
+          sizes="100%"
           alt="logo"
-          className="max-w-[80px]"
+          className="w-full max-w-[300px]"
         />
       </div>
     </div>

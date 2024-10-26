@@ -13,7 +13,6 @@ import { featuredData } from "./_data/featured_data";
 import { CardCooperation } from "@/components/card/card-cooperation";
 import ProgramsList from "@/components/program-list";
 import CooperationBox from "@/components/coop-box";
-import About from "@/components/About";
 
 export default function Home() {
   return (
