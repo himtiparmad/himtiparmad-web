@@ -5,6 +5,10 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import EventImage from "@/components/event";
 import event1 from "@/assets/images/event1.png";
 import event2 from "@/assets/images/event2.png";
+import ProgramsList from "@/components/program-list";
+import CooperationBox from "@/components/coop-box";
+import About from "@/components/About";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -71,6 +75,41 @@ export default function Home() {
           <EventImage src={event2} alt="HIMTI GO!" title="HIMTI GO!" />
         </div>
       </div>
-    </div>
+
+    {/* Programs */}
+
+
+      <div className="mt-28 px-16 text-white">
+          <div>
+            <h1 className="text-[40px] pt-3.5 leading-[130%] text-center font-normal text-brand-main">Our Programs</h1>
+              <p className="text-center text-base mt-2 font-normal text-dark-dark">HIMTI has several work program agendas (proker) every year. This program involves students, <br /> lecturers, alumni, and other related parties</p>
+            </div>
+          <ProgramsList/>
+        <CooperationBox/>
+      </div>
+
+    {/* About */}
+
+          <div className="mt-28 px-16 text-white">
+              <div>
+                <h1 className="text-[40px] pt-3.5 leading-[130%] text-center font-normal text-brand-dark">Have Questions About HIMTI? <br /> 
+                  <span className="text-brand-main">We Have Answer!</span></h1>
+              </div>
+            <div>
+              <About/>
+            </div>
+          </div>
+
+
+          {/* Footer */}
+
+            <div>
+              <Footer/>
+            </div>
+
+  </div>
+
+
+
   );
 }
