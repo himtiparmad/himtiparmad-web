@@ -45,8 +45,8 @@ const NavigationBar = () => {
   };
 
   useEffect(() => {
-    setIsHimtipedia(pathname === "/himtipedia");
-    if (pathname === "/himtipedia") {
+    setIsHimtipedia(pathname.startsWith("/himtipedia"));
+    if (pathname.startsWith("/himtipedia")) {
       document.body.style.backgroundColor = "#EBEBF0";
     } else {
       document.body.style.backgroundColor = "";
@@ -86,22 +86,20 @@ const NavigationBar = () => {
             </Link>
           ))}
         </ul>
-        <div
+        <Link
+          href={"#"}
           className={`w-1/6 px-5 h-20 rounded-lg flex gap-1 items-center justify-center ${
             isHimtipedia ? "bg-gray-50" : "bg-dark-himti"
           }`}
         >
-          <Link
-            href={"#"}
-            className="text-brand-main flex flex-row gap-1 items-center"
-          >
+          <div className="text-brand-main flex flex-row gap-1 items-center">
             <Icon
               icon={"material-symbols:arrow-right-alt"}
               className="w-6 h-6"
             />
             Contact Us.
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
     </nav>
   );
