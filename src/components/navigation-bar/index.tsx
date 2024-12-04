@@ -62,7 +62,7 @@ const NavigationBar = () => {
       <div className="w-full flex flex-row items-center justify-between absolute pt-5 mt-10">
         <div
           className={`w-1/6 px-10 h-20 rounded-lg flex items-center justify-center ${
-            isHimtipedia ? "bg-gray-50" : "bg-dark-himti"
+            isHimtipedia ? "bg-white" : "bg-dark-himti"
           }`}
         >
           <Link href={"/"}>
@@ -71,7 +71,7 @@ const NavigationBar = () => {
         </div>
         <ul
           className={`flex flex-row items-center justify-between w-full h-20 p-3 gap-2 rounded-lg mx-3 ${
-            isHimtipedia ? "bg-gray-50" : "bg-dark-himti"
+            isHimtipedia ? "bg-white" : "bg-dark-himti"
           }`}
         >
           {nav.map((item, index) => (
@@ -89,7 +89,7 @@ const NavigationBar = () => {
         <Link
           href={"#"}
           className={`w-1/6 px-5 h-20 rounded-lg flex gap-1 items-center justify-center ${
-            isHimtipedia ? "bg-gray-50" : "bg-dark-himti"
+            isHimtipedia ? "bg-white" : "bg-dark-himti"
           }`}
         >
           <div className="text-brand-main flex flex-row gap-1 items-center">

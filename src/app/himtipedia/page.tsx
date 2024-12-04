@@ -13,6 +13,9 @@ export default function Himtipedia() {
             alt="hero"
             width={600}
             height={400}
+            priority={true}
+            quality={100}
+            sizes="100%"
             className="w-full h-auto rounded-lg shadow"
           />
         </div>
@@ -46,15 +49,21 @@ export default function Himtipedia() {
               link: "/himtipedia/profile",
             },
             {
+              title: "Kepengurusan",
+              description:
+                "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              link: "/himtipedia/kepengurusan",
+            },
+            {
               title: "Program Kerja",
               description:
                 "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
-              link: "/himtipedia/programKerja",
+              link: "/himtipedia/program-Kerja",
             },
             {
               title: "Kegiatan dan Acara",
               description:
-                "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+              "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
               link: "/himtipedia/kegiatan-acara",
             },
             {
@@ -62,12 +71,6 @@ export default function Himtipedia() {
               description:
                 "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
               link: "/himtipedia/artikel-berita",
-            },
-            {
-              title: "Dokumen dan Berkas",
-              description:
-                "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
-              link: "/himtipedia/dokumen",
             },
             {
               title: "Dokumen dan Berkas",

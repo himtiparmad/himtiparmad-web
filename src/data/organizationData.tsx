@@ -1,3 +1,5 @@
+
+import Image from "next/image";
 export interface Section {
   title: string;
   content: string;
@@ -70,7 +72,7 @@ const organizationData = [
           title: "Struktur Organisasi",
           content: (
             <div>
-              <img src="images/organization.png" className="w-full h-auto mb-4" />
+              <Image src="images/organization.png" width={0} height={0} sizes="100%" alt="so" className="w-full h-auto mb-4" />
               <h4 className="font-semibold">Eksekutif Organisasi</h4> <br />
               <p>Sebagai pilar utama kepemimpinan HIMTI, Eksekutif Organisasi, terdiri dari Ketua dan Wakil Ketua, memimpin dan membimbing organisasi menuju pencapaian visi dan misi yang diusung. Mereka berfungsi sebagai representasi HIMTI di berbagai forum dan memastikan koordinasi efektif.</p> <br />
               <h3>Fungsi:</h3>

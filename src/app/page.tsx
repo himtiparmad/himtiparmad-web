@@ -11,8 +11,6 @@ import Link from "next/link";
 import Programs from "@/components/programs";
 import { featuredData } from "./_data/featured_data";
 import { CardCooperation } from "@/components/card/card-cooperation";
-import ProgramsList from "@/components/program-list";
-import CooperationBox from "@/components/coop-box";
 
 export default function Home() {
   return (
@@ -25,6 +23,7 @@ export default function Home() {
           height={900}
           className="w-full h-full object-cover bg-cover rounded-xl"
         />
+        <div className="absolute inset-0 bg-gradient-to-b from-black to-black opacity-50 rounded-xl"/>
         <div className="absolute inset-0 flex flex-col items-start justify-end text-white text-center bg-opacity-50 px-16 pb-12">
           <p className="text-2xl">
             # A <span className="text-brand-main">Team</span> Like No Other
