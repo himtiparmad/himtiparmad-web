@@ -19,9 +19,10 @@ export default function Home() {
         <Image
           src={Hero}
           alt="hero"
-          width={1360}
-          height={900}
-          className="w-full h-full object-cover bg-cover rounded-xl"
+          width={0}
+          height={0}
+          sizes="100%"
+          className="w-full max-w-[1360] h-full object-cover bg-cover rounded-xl"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black to-black opacity-50 rounded-xl"/>
         <div className="absolute inset-0 flex flex-col items-start justify-end text-white text-center bg-opacity-50 px-16 pb-12">
