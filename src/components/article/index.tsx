@@ -37,13 +37,13 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
           <p className="text-base text-[#797979] italic">{author}</p>
         </div>
         <div>
-          <a className="text-brand-main flex items-center">
+          <div className="text-brand-main flex items-center">
             Read more
             <Icon
               icon={"material-symbols:arrow-right-alt"}
               className="w-6 h-6 ml-2 transform rotate-[-45deg]"
             />
-          </a>
+          </div>
         </div>
       </Link>
     </div>
