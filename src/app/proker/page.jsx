@@ -10,7 +10,7 @@ export default function About() {
         </h2>
         <p className="max-w-5xl mx-auto text-dark-dark">
           Nama kabinet HIMTI periode 2025/2026 adalah gabungan dari dua kata
-          yaitu <b>innovation</b> dan <b>vara</b> yang berarti hadiah dalam bahasa
+          yaitu innovation dan vara yang berarti hadiah dalam bahasa
           Sansekerta. Nama ini menyiratkan bahwa inovasi adalah hadiah yang
           dapat dicapai melalui kolaborasi dan kerja keras bersama. Dengan nama
           ini, HIMTI Paramadina mengedepankan semangat untuk terus berinovasi
