@@ -86,13 +86,14 @@ export default function KontakKami() {
             </span>
           </h1>
           <p className="font-medium text-gray-200 lg:text-lg">
-            Kami dari Himti Paramadina siap melayani pertanyaan, masukan, maupun
-            aspirasi dari civitas akademika Universitas Paramadina. Baik seputar
-            kegiatan keislaman, kajian, donasi, hingga program sosial. Silakan
-            hubungi kami kapan saja.
+            Kami dari HIMTI Paramadina membuka ruang bagi setiap mahasiswa
+            Universitas Paramadina yang ingin menyampaikan pertanyaan, masukan,
+            kritik, ataupun aspirasi lainnya. Baik terkait kegiatan HIMTI,
+            program kerja, pengalaman organisasi, maupun hal-hal yang ingin kamu
+            sampaikan demi perkembangan HIMTI ke arah yang lebih baik.
           </p>
           <div className="mt-6 flex gap-4">
-            <Link href="https://wa.me/6281285092798?text=Assalamualaikum,%20Saya%20mohon%20bantuan%20dari%20DKM%20Paramadina.">
+            <Link href="https://wa.me/6281297590093?text=Halo,%20Saya%20mohon%20bantuan%20dari%20HIMTI%20Paramadina.">
               <button className="flex items-center gap-2 cursor-pointer bg-[#0066FF] text-white px-8 py-2 rounded-[12px] hover:bg-blue-700">
                 <FaWhatsapp className="text-white" />
                 Hubungi Whatsapp
@@ -112,112 +113,111 @@ export default function KontakKami() {
           className="rounded-3xl lg:w-2/5"
         />
       </section>
-    
+
       <section id="ngadukyok">
-      <div className="md:px-24 px-11 md:mb-0 mb-12 text-white">
-        <h2 className="md:text-[40px] text-4xl leading-[130%] font-main text-brand-main">
-          NgadukYok
-        </h2>
-        <p className="text-base mt-2 font-normal text-dark-dark">
-          Yooo warga HIMTI! Ada kritik? Saran? Pertanyaan? Curhat percintaan?
-          Atau cuma mau marah-marah halus? Gas aja isi form ini! Santai… semua
-          isi form ini rahasia, gak bakal diumbar ke grup keluarga atau story
-          kampus. Ini cuma biar HIMTI makin upgrade kayak HP baru, bukan nambah
-          drama kayak sinetron, Thanks yang udah ngadu, kamu keren
-        </p>
-      </div>
+        <div className="md:px-24 px-11 md:mb-0 mb-12 text-white">
+          <h2 className="md:text-[40px] text-4xl leading-[130%] font-main text-brand-main">
+            NgadukYok
+          </h2>
+          <p className="text-base mt-2 font-normal text-dark-dark">
+            Yooo warga HIMTI! Ada kritik? Saran? Pertanyaan? Curhat percintaan?
+            Atau cuma mau marah-marah halus? Gas aja isi form ini! Santai… semua
+            isi form ini rahasia, gak bakal diumbar ke grup keluarga atau story
+            kampus. Ini cuma biar HIMTI makin upgrade kayak HP baru, bukan
+            nambah drama kayak sinetron, Thanks yang udah ngadu, kamu keren
+          </p>
+        </div>
 
-      <div className="min-h-screen bg-[#0B0E1A] text-white flex lg:flex-row flex-col justify-center gap-12 mb-24 items-center px-4">
-        <motion.img
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          src="/images/services.svg"
-          loading="lazy"
-          width="700"
-          height="700"
-          className="rounded-3xl lg:w-2/5"
-        />
-        <form
-          onSubmit={onSubmit}
-          className="w-full max-w-2xl space-y-4 bg-[#111827] p-8 rounded-2xl shadow-xl"
-        >
-          <input
-            className="w-full p-4 rounded-xl bg-[#1F2937] outline-none"
-            placeholder="Nama kamu"
-            value={form.name}
-            onChange={(e) => setForm({ ...form, name: e.target.value })}
-            required
+        <div className="min-h-screen bg-[#0B0E1A] text-white flex lg:flex-row flex-col justify-center gap-12 mb-24 items-center px-4">
+          <motion.img
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            src="/images/services.svg"
+            loading="lazy"
+            width="700"
+            height="700"
+            className="rounded-3xl lg:w-2/5"
           />
-
-          <input
-            className="w-full p-4 rounded-xl bg-[#1F2937] outline-none"
-            placeholder="Telepon kamu (opsional)"
-            value={form.phone}
-            onChange={(e) => setForm({ ...form, phone: e.target.value })}
-          />
-
-          <select
-            className="w-full p-4 rounded-xl bg-[#1F2937] outline-none"
-            value={form.year}
-            onChange={(e) => setForm({ ...form, year: e.target.value })}
-            required
+          <form
+            onSubmit={onSubmit}
+            className="w-full max-w-2xl space-y-4 bg-[#111827] p-8 rounded-2xl shadow-xl"
           >
-            <option value="">Pilih tahun angkatan</option>
-            <option>2020</option>
-            <option>2021</option>
-            <option>2022</option>
-            <option>2023</option>
-            <option>2024</option>
-          </select>
+            <input
+              className="w-full p-4 rounded-xl bg-[#1F2937] outline-none"
+              placeholder="Nama kamu"
+              value={form.name}
+              onChange={(e) => setForm({ ...form, name: e.target.value })}
+              required
+            />
 
-          <select
-            className="w-full p-4 rounded-xl bg-[#1F2937] outline-none"
-            value={form.type}
-            onChange={(e) => setForm({ ...form, type: e.target.value })}
-            required
-          >
-            <option value="">Pilih Jenis</option>
-            <option>Curhat</option>
-            <option>Kritik & Saran</option>
-            <option>Pertanyaan</option>
-          </select>
+            <input
+              className="w-full p-4 rounded-xl bg-[#1F2937] outline-none"
+              placeholder="Telepon kamu (opsional)"
+              value={form.phone}
+              onChange={(e) => setForm({ ...form, phone: e.target.value })}
+            />
 
-          <textarea
-            className="w-full p-4 rounded-xl bg-[#1F2937] outline-none h-40"
-            placeholder="Pesan"
-            value={form.message}
-            onChange={(e) => setForm({ ...form, message: e.target.value })}
-            required
-          />
-
-          <button
-            className="w-full p-4 font-bold rounded-xl bg-gradient-to-r from-blue-500 to-cyan-400 hover:opacity-90 transition"
-            disabled={loading}
-          >
-            {loading ? "Mengirim..." : "KIRIM"}
-          </button>
-
-          {waLink && (
-            <a
-              href={waLink}
-              target="_blank"
-              className="block text-center p-3 rounded-xl border border-green-400 text-green-400 hover:bg-green-400 hover:text-black transition"
+            <select
+              className="w-full p-4 rounded-xl bg-[#1F2937] outline-none"
+              value={form.year}
+              onChange={(e) => setForm({ ...form, year: e.target.value })}
+              required
             >
-              Kirim lewat WhatsApp
-            </a>
-          )}
+              <option value="">Pilih tahun angkatan</option>
+              <option>2020</option>
+              <option>2021</option>
+              <option>2022</option>
+              <option>2023</option>
+              <option>2024</option>
+            </select>
 
-          {success && (
-            <p className="text-center text-green-400 font-semibold">
-              Pesan berhasil dikirim!
-            </p>
-          )}
-        </form>
-      </div>
+            <select
+              className="w-full p-4 rounded-xl bg-[#1F2937] outline-none"
+              value={form.type}
+              onChange={(e) => setForm({ ...form, type: e.target.value })}
+              required
+            >
+              <option value="">Pilih Jenis</option>
+              <option>Curhat</option>
+              <option>Kritik & Saran</option>
+              <option>Pertanyaan</option>
+            </select>
+
+            <textarea
+              className="w-full p-4 rounded-xl bg-[#1F2937] outline-none h-40"
+              placeholder="Pesan"
+              value={form.message}
+              onChange={(e) => setForm({ ...form, message: e.target.value })}
+              required
+            />
+
+            <button
+              className="w-full p-4 font-bold rounded-xl bg-gradient-to-r from-blue-500 to-cyan-400 hover:opacity-90 transition"
+              disabled={loading}
+            >
+              {loading ? "Mengirim..." : "KIRIM"}
+            </button>
+
+            {waLink && (
+              <a
+                href={waLink}
+                target="_blank"
+                className="block text-center p-3 rounded-xl border border-green-400 text-green-400 hover:bg-green-400 hover:text-black transition"
+              >
+                Kirim lewat WhatsApp
+              </a>
+            )}
+
+            {success && (
+              <p className="text-center text-green-400 font-semibold">
+                Pesan berhasil dikirim!
+              </p>
+            )}
+          </form>
+        </div>
       </section>
-
 
       <div className="w-full">
         <iframe

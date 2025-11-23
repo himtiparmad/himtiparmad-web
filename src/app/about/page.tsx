@@ -9,13 +9,14 @@ export default function About() {
           Tentang Kami
         </h2>
         <p className="max-w-5xl mx-auto text-dark-dark">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Nama kabinet HIMTI periode 2025/2026 adalah gabungan dari dua kata
+          yaitu "innovation" dan "vara" yang berarti hadiah dalam bahasa
+          Sansekerta. Nama ini menyiratkan bahwa inovasi adalah hadiah yang
+          dapat dicapai melalui kolaborasi dan kerja keras bersama. Dengan nama
+          ini, HIMTI Paramadina mengedepankan semangat untuk terus berinovasi
+          sebagai hasil dari kerjasama yang erat dan kontribusi positif dari
+          setiap anggota dalam membentuk masa depan yang lebih baik dalam dunia
+          teknologi informasi.
         </p>
         <div className="my-5 mx-auto bg-[#0066FF] w-40 h-2 rounded-full"></div>
       </section>
@@ -34,17 +35,44 @@ export default function About() {
         <div className="overflow-hidden group relative">
           <div className="flex w-[200%] animate-left-marquee group-hover:[animation-play-state:paused] gap-6 items-center">
             <div className="flex gap-6">
-              <img src="/images/img1_1.png" className="h-40 w-auto rounded-xl" />
-              <img src="/images/img1_2.png" className="h-40 w-auto rounded-xl" />
-              <img src="/images/img1_3.png" className="h-40 w-auto rounded-xl" />
-              <img src="/images/img1_4.png" className="h-40 w-auto rounded-xl" />
-              <img src="/images/img1_2.png" className="h-40 w-auto rounded-xl" />
+              <img
+                src="/images/img1_1.png"
+                className="h-40 w-auto rounded-xl"
+              />
+              <img
+                src="/images/img1_2.png"
+                className="h-40 w-auto rounded-xl"
+              />
+              <img
+                src="/images/img1_3.png"
+                className="h-40 w-auto rounded-xl"
+              />
+              <img
+                src="/images/img1_4.png"
+                className="h-40 w-auto rounded-xl"
+              />
+              <img
+                src="/images/img1_2.png"
+                className="h-40 w-auto rounded-xl"
+              />
 
               {/* copy kedua untuk seamless */}
-              <img src="/images/img1_1.png" className="h-40 w-auto rounded-xl" />
-              <img src="/images/img1_2.png" className="h-40 w-auto rounded-xl" />
-              <img src="/images/img1_3.png" className="h-40 w-auto rounded-xl" />
-              <img src="/images/img1_4.png" className="h-40 w-auto rounded-xl" />
+              <img
+                src="/images/img1_1.png"
+                className="h-40 w-auto rounded-xl"
+              />
+              <img
+                src="/images/img1_2.png"
+                className="h-40 w-auto rounded-xl"
+              />
+              <img
+                src="/images/img1_3.png"
+                className="h-40 w-auto rounded-xl"
+              />
+              <img
+                src="/images/img1_4.png"
+                className="h-40 w-auto rounded-xl"
+              />
             </div>
           </div>
         </div>
@@ -53,17 +81,44 @@ export default function About() {
         <div className="overflow-hidden group relative">
           <div className="flex w-[200%] animate-right-marquee group-hover:[animation-play-state:paused] gap-6 items-center">
             <div className="flex gap-6">
-              <img src="/images/img2_1.png" className="h-40 w-auto rounded-xl" />
-              <img src="/images/img2_2.png" className="h-40 w-auto rounded-xl" />
-              <img src="/images/img2_3.png" className="h-40 w-auto rounded-xl" />
-              <img src="/images/img2_4.png" className="h-40 w-auto rounded-xl" />
-              <img src="/images/img2_5.png" className="h-40 w-auto rounded-xl" />
+              <img
+                src="/images/img2_1.png"
+                className="h-40 w-auto rounded-xl"
+              />
+              <img
+                src="/images/img2_2.png"
+                className="h-40 w-auto rounded-xl"
+              />
+              <img
+                src="/images/img2_3.png"
+                className="h-40 w-auto rounded-xl"
+              />
+              <img
+                src="/images/img2_4.png"
+                className="h-40 w-auto rounded-xl"
+              />
+              <img
+                src="/images/img2_5.png"
+                className="h-40 w-auto rounded-xl"
+              />
 
               {/* copy kedua */}
-              <img src="/images/img2_1.png" className="h-40 w-auto rounded-xl" />
-              <img src="/images/img2_2.png" className="h-40 w-auto rounded-xl" />
-              <img src="/images/img2_5.png" className="h-40 w-auto rounded-xl" />
-              <img src="/images/img2_4.png" className="h-40 w-auto rounded-xl" />
+              <img
+                src="/images/img2_1.png"
+                className="h-40 w-auto rounded-xl"
+              />
+              <img
+                src="/images/img2_2.png"
+                className="h-40 w-auto rounded-xl"
+              />
+              <img
+                src="/images/img2_5.png"
+                className="h-40 w-auto rounded-xl"
+              />
+              <img
+                src="/images/img2_4.png"
+                className="h-40 w-auto rounded-xl"
+              />
             </div>
           </div>
         </div>
@@ -71,17 +126,44 @@ export default function About() {
         <div className="overflow-hidden group relative">
           <div className="flex w-[200%] animate-left-marquee group-hover:[animation-play-state:paused] gap-6 items-center">
             <div className="flex gap-6">
-              <img src="/images/img3_1.png" className="h-40 w-auto rounded-xl" />
-              <img src="/images/img3_2.png" className="h-40 w-auto rounded-xl" />
-              <img src="/images/img3_3.png" className="h-40 w-auto rounded-xl" />
-              <img src="/images/img3_4.png" className="h-40 w-auto rounded-xl" />
-              <img src="/images/img3_3.png" className="h-40 w-auto rounded-xl" />
+              <img
+                src="/images/img3_1.png"
+                className="h-40 w-auto rounded-xl"
+              />
+              <img
+                src="/images/img3_2.png"
+                className="h-40 w-auto rounded-xl"
+              />
+              <img
+                src="/images/img3_3.png"
+                className="h-40 w-auto rounded-xl"
+              />
+              <img
+                src="/images/img3_4.png"
+                className="h-40 w-auto rounded-xl"
+              />
+              <img
+                src="/images/img3_3.png"
+                className="h-40 w-auto rounded-xl"
+              />
 
               {/* copy kedua untuk seamless */}
-              <img src="/images/img3_1.png" className="h-40 w-auto rounded-xl" />
-              <img src="/images/img3_2.png" className="h-40 w-auto rounded-xl" />
-              <img src="/images/img3_3.png" className="h-40 w-auto rounded-xl" />
-              <img src="/images/img3_4.png" className="h-40 w-auto rounded-xl" />
+              <img
+                src="/images/img3_1.png"
+                className="h-40 w-auto rounded-xl"
+              />
+              <img
+                src="/images/img3_2.png"
+                className="h-40 w-auto rounded-xl"
+              />
+              <img
+                src="/images/img3_3.png"
+                className="h-40 w-auto rounded-xl"
+              />
+              <img
+                src="/images/img3_4.png"
+                className="h-40 w-auto rounded-xl"
+              />
             </div>
           </div>
         </div>

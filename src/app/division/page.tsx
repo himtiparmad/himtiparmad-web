@@ -26,16 +26,12 @@ function Division() {
             </span>
           </h1>
           <p className="font-medium text-gray-200 lg:text-lg">
-            DKM Paramadina memiliki beberapa divisi yang saling bersinergi untuk
-            mewujudkan visi dan misi dakwah kampus. Setiap divisi memiliki peran
-            penting dalam menunjang kegiatan keislaman yang aktif, kreatif dan
-            berdampak.
+            HIMTI Innovara Sebagai pilar utama kepemimpinan HIMTI, Eksekutif
+            Organisasi, terdiri dari Ketua dan Wakil Ketua, memimpin dan
+            membimbing organisasi menuju pencapaian visi dan misi yang diusung.
+            Berfungsi sebagai representasi HIMTI di berbagai forum dan
+            memastikan koordinasi efektif.
           </p>
-          <Link href="#divisi">
-            <button className="mt-6 cursor-pointer bg-[#0066FF] text-white px-8 py-2 rounded-[12px] hover:bg-blue-700">
-              Lihat Selengkapnya
-            </button>
-          </Link>
         </motion.div>
         <motion.div
           className="rounded-3xl lg:w-2/5"
