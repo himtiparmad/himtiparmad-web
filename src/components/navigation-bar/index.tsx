@@ -16,7 +16,7 @@ const nav: NavItem[] = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
   { name: "Division", href: "/division" },
-  { name: "NgaduYok", href: "/programs" },
+  { name: "NgaduYok", href: "/contact-us#ngadukyok" },
   { name: "Contact Us", href: "/contact-us" },
 ];
 
