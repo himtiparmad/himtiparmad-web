@@ -61,9 +61,9 @@ function Division() {
             Department Administration
           </h3>
           <p className="text-gray-200 text-sm mt-2 lg:w-4/5">
-            Pemimpin organisasi yang bertanggung jawab mengarahkan kebijakan,
-            mengelola operasional dan memastikan seluruh program berjalan
-            selaras dengan visi dakwah kampus.
+            Bertanggung jawab atas administrasi harian, rapat, dan keuangan
+            organisasi, memastikan kelancaran operasional dan transparansi
+            keuangan.
           </p>
           <div className="bg-[#0066FF] w-40 h-1 rounded-full mt-4 mx-auto md:mx-auto lg:mx-0"></div>
         </div>
@@ -92,9 +92,9 @@ function Division() {
             Department Financial
           </h3>
           <p className="text-gray-200 text-sm mt-2 lg:w-4/5">
-            Pemimpin organisasi yang bertanggung jawab mengarahkan kebijakan,
-            mengelola operasional dan memastikan seluruh program berjalan
-            selaras dengan visi dakwah kampus.
+            Bertanggung jawab atas administrasi harian, rapat, dan keuangan
+            organisasi, memastikan kelancaran operasional dan transparansi
+            keuangan.
           </p>
           <div className="bg-[#0066FF] w-40 h-1 rounded-full mt-4 mx-auto md:mx-auto lg:mx-0"></div>
         </div>
@@ -123,9 +123,11 @@ function Division() {
             Department Public Relations and Media
           </h3>
           <p className="text-gray-200 text-sm mt-2 lg:w-4/5">
-            Pemimpin organisasi yang bertanggung jawab mengarahkan kebijakan,
-            mengelola operasional dan memastikan seluruh program berjalan
-            selaras dengan visi dakwah kampus.
+            Membangun hubungan positif dengan pihak internal dan eksternal,
+            menjaga citra organisasi, dan menjalin kerjasama dengan alumni dan
+            mitra industri. Mengelola media sosial, konten situs web, dan
+            publikasi untuk menyampaikan informasi HIMTI secara efektif dan
+            membangun kehadiran digital.
           </p>
           <div className="bg-[#0066FF] w-40 h-1 rounded-full mt-4 mx-auto md:mx-auto lg:mx-0"></div>
         </div>
@@ -160,9 +162,8 @@ function Division() {
             Department Research Technology
           </h3>
           <p className="text-gray-200 text-sm mt-2 lg:w-4/5">
-            Pemimpin organisasi yang bertanggung jawab mengarahkan kebijakan,
-            mengelola operasional dan memastikan seluruh program berjalan
-            selaras dengan visi dakwah kampus.
+            Menjadi pusat inovasi dan riset, mengelola proyek riset, serta
+            mendorong partisipasi anggota dalam pengembangan teknologi.
           </p>
           <div className="bg-[#0066FF] w-40 h-1 rounded-full mt-4 mx-auto md:mx-auto lg:mx-0"></div>
         </div>
@@ -191,9 +192,8 @@ function Division() {
             Department Creative and Design
           </h3>
           <p className="text-gray-200 text-sm mt-2 lg:w-4/5">
-            Pemimpin organisasi yang bertanggung jawab mengarahkan kebijakan,
-            mengelola operasional dan memastikan seluruh program berjalan
-            selaras dengan visi dakwah kampus.
+            Bertugas merancang identitas visual HIMTI, menciptakan desain grafis
+            kreatif, dan meningkatkan daya tarik acara dan program.
           </p>
           <div className="bg-[#0066FF] w-40 h-1 rounded-full mt-4 mx-auto md:mx-auto lg:mx-0"></div>
         </div>
@@ -228,9 +228,10 @@ function Division() {
             Department Human Capital & Education
           </h3>
           <p className="text-gray-200 text-sm mt-2 lg:w-4/5">
-            Pemimpin organisasi yang bertanggung jawab mengarahkan kebijakan,
-            mengelola operasional dan memastikan seluruh program berjalan
-            selaras dengan visi dakwah kampus.
+            Berkomitmen untuk memantau dan menganalisis kinerja seluruh anggota
+            HIMTI serta meningkatkan kualitas pendidikan dan pelatihan mahasiswa
+            Teknik Informatika, memastikan pengembangan akademis dan profesional
+            yang optimal.
           </p>
           <div className="bg-[#0066FF] w-40 h-1 rounded-full mt-4 mx-auto md:mx-auto lg:mx-0"></div>
         </div>
