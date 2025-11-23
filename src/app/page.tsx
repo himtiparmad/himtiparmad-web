@@ -94,7 +94,7 @@ export default function Home() {
           </div>
           <div className="flex items-center py-4 md:py-0">
             <a
-              href="/programs"
+              href="/proker"
               className="text-brand-main text-base font-normal flex items-center"
             >
               see all programs
@@ -108,13 +108,13 @@ export default function Home() {
         <div className="w-full flex flex-col lg:flex-row gap-6 mt-14">
           <EventImage
             src={"/images/itfest_4.jpg"}
-            href="/programs"
+            href="/proker"
             alt="HIMTI IT Fest Competition 5.0"
             title="HIMTI IT Fest Competition 5.0"
           />
           <EventImage
             src={"/images/reformatics_24.jpg"}
-            href="/programs"
+            href="/proker"
             alt="Reformatics 2025"
             title="Reformatics 2025"
           />
@@ -200,11 +200,11 @@ export default function Home() {
               />
             );
           })}
-          {/* <Programs
+          <Programs
             title="Explore our programs"
-            href="/programs"
+            href="/proker"
             backgroundColor="green"
-          /> */}
+          />
         </div>
       </div>
 
