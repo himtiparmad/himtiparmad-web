@@ -10,9 +10,21 @@
   },
   "dependencies": {
     "@iconify/react": "^5.0.1",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.22",
+    "lucide-react": "^0.544.0",
     "next": "^15.0.2-canary.6",
+    "nodemailer": "^7.0.10",
     "react": "^18",
-    "react-dom": "^18"
+    "react-bits": "^1.0.5",
+    "react-dom": "^18",
+    "react-icons": "^5.5.0",
+    "react-native-web": "^0.18.10",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
