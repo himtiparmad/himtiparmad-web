@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import NavigationBar from "@/components/navigation-bar";
 import Footer from "@/components/footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} bg-dark-himti`}>
+        <SpeedInsights/>
         <NavigationBar />
         <main className="w-full max-w-[1400px] flex mx-auto">{children}</main>
         <Footer />
