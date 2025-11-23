@@ -33,14 +33,11 @@ export default function Home() {
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 sm:px-8 md:px-16">
           <div className="mb-4 flex w-fit items-center rounded-full border border-gray-200 bg-white/50 p-1 backdrop-blur">
             <div className="rounded-full bg-gray-200/50 px-2 py-1 font-semibold text-gray-700 backdrop-blur md:block text-xs md:text-md">
-              # The <span className="text-brand-main font-main">Next Level</span> Squad
+              # The{" "}
+              <span className="text-brand-main font-main">Next Level</span>{" "}
+              Squad
             </div>
           </div>
-          {/* <p className="text-sm sm:text-lg md:text-xl mb-2">
-            # A <span className="text-brand-main font-main">Team</span> Like No
-            Other
-          </p> */}
-
           <h1
             className="font-main leading-tight mb-4
       text-4xl sm:text-5xl md:text-7xl lg:text-[96px]"
@@ -50,8 +47,8 @@ export default function Home() {
           </h1>
 
           <p className="text-xs sm:text-base md:text-lg text-gray-200 max-w-xl">
-            Welcome to our journey of innovation, collaboration, and excellence
-            in Informatics.
+            Selamat datang di perjalanan inovasi, kolaborasi, dan unggulan di
+            bidang Informatika.
           </p>
         </div>
       </div>
@@ -59,7 +56,7 @@ export default function Home() {
       <section className="py-12 text-center px-4 z-20" id="lihatselengkapnya">
         <div className="flex items-center justify-center gap-2">
           <h2 className="text-2xl font-main lg:text-4xl font-bold text-[#0066FF] mt-12 mb-4">
-            Welcome TO Himti Innovara
+            Selamat Datang di Himti Paramadina
           </h2>
 
           {/* ICON LINK KE /about */}
@@ -69,13 +66,13 @@ export default function Home() {
         </div>
 
         <p className="max-w-5xl mx-auto text-dark-dark">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          HIMTI Paramadina (Himpunan Mahasiswa Teknik Informatika Universitas
+          Paramadina) merupakan organisasi resmi mahasiswa yang menaungi
+          mahasiswa Program Studi Teknik Informatika di Universitas Paramadina.
+          Organisasi ini berperan sebagai wadah bagi mahasiswa untuk
+          mengembangkan kemampuan akademik, organisasi, dan keterampilan
+          interpersonal melalui berbagai program dan kegiatan baik di dalam
+          maupun di luar kampus.
         </p>
 
         <div className="my-5 mx-auto bg-[#0066FF] w-40 h-2 rounded-full"></div>
@@ -85,11 +82,11 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row justify-between">
           <div>
             <h2 className="md:text-[40px] text-4xl leading-[130%] font-main text-brand-main">
-              Upcoming Programs
+              Program yang Akan Datang
             </h2>
             <p className="text-base mt-2 font-normal text-dark-dark">
-              Here are some programs that will be held by HIMTI Paramadina in the
-              near future
+              Berikut adalah beberapa program yang akan diselenggarakan oleh
+              HIMTI Paramadina dalam waktu dekat.
             </p>
           </div>
           <div className="flex items-center py-4 md:py-0">
@@ -97,7 +94,7 @@ export default function Home() {
               href="/proker"
               className="text-brand-main text-base font-normal flex items-center"
             >
-              see all programs
+              Full list di sini cuy
               <Icon
                 icon={"material-symbols:arrow-right-alt"}
                 className="w-6 h-6 ml-2 transform rotate-[-45deg]"
@@ -179,14 +176,15 @@ export default function Home() {
       </div> */}
 
       <div className="px-11 mt-32">
-        <div className="flex flex-col items-start md:items-center">
+        <div className="md:w-3/4 w:1/2 m-auto text-center flex flex-col items-start md:items-center">
           <h3 className="text-brand-main font-main text-3xl md:text-4xl">
-            Featured Programs
+            Agenda Program Kerja HIMTI
           </h3>
-          <p className="text-dark-dark pt-4">
-            HIMTI has several work program agendas (proker) every year. This
-            program involves students, lecturers, alumni, and other related
-            parties
+          <p className="text-dark-dark pt-4 text-center">
+            HIMTI memiliki beberapa agenda program kerja (proker) setiap
+            tahunnya. Program-program ini melibatkan mahasiswa, dosen, alumni,
+            serta pihak-pihak terkait lainnya sebagai bentuk kolaborasi dan
+            pengembangan komunitas.
           </p>
         </div>
         <div className="flex flex-col gap-6 mt-16">

@@ -28,7 +28,7 @@ export default function HimtiCommitteeCards({ members }: Props) {
   return (
     <section className="max-w-6xl mx-auto px-4 py-10 mt-32">
       <div className="flex flex-col items-start md:items-center">
-        <h3 className="text-brand-main font-main text-3xl md:text-4xl">
+        <h3 className="text-brand-main font-main text-3xl md:text-4xl text-xl">
           Pengurus HIMTI
         </h3>
         <p className="text-dark-dark pt-4 text-center">
