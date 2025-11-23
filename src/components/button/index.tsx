@@ -3,7 +3,7 @@ import React from "react";
 
 type ButtonProps = {
   text?: string;
-  variant: "green";
+  variant: "blue";
   onClick?: () => void;
   icon?: React.ReactNode | null;
   iconPosition?: "left" | "right";
@@ -25,7 +25,7 @@ const Button = (props: ButtonProps) => {
   } = props;
 
   const variantClasses = {
-    green: "bg-brand-main text-black",
+    blue: "bg-brand-main text-white",
   }[variant];
 
   const content = (

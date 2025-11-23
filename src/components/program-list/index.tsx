@@ -2,13 +2,17 @@ import React from "react";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 const programs = [
-  "HIMTI IT Fest Competition 4.0",
-  "Reformatics 2024",
+  "HIMTI IT Fest Competition 5.0",
+  "Reformatics 2025",
   "Brahma: IT Fest Ready",
   "Brahma: Kobit & Barbar",
   "HIMTI GO!",
   "Microblog & Article",
-  "Bengkel IT"
+  "Bengkel IT",
+  "Pengabdian Kepada Masyarakat",
+  "HIMTI Collaboration",
+  "HIMTI Connect College",
+  "HIMTI Connect Company",
 ];
 
 const ProgramsList = () => {

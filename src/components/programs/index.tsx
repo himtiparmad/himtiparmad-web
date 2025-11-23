@@ -20,13 +20,13 @@ const Programs: React.FC<ProgramsProps> = ({
       }`}
     >
       <div>
-        <p className="text-4xl text-light-main">{title}</p>
+        <p className="md:text-4xl text-md text-light-main">{title}</p>
       </div>
       <div>
         <Icon
           href={href}
           icon={"material-symbols:arrow-right-alt"}
-          className={`w-12 h-12 transform rotate-[-45deg] ${
+          className={`md:w-12 md:h-12 w-4 h-4 transform rotate-[-45deg] ${
             backgroundColor === "green" ? "text-white" : "text-brand-main"
           }`}
         />

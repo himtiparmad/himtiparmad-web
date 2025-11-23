@@ -12,7 +12,7 @@ interface EventImageProps {
 
 const EventImage: React.FC<EventImageProps> = ({ src, alt, title, href }) => {
   return (
-    <Link href={href} className="relative w-full h-[400px]">
+    <Link href={href} className="relative w-full h-[400px] my-6">
       <Image
         src={src}
         alt={alt}
@@ -21,12 +21,12 @@ const EventImage: React.FC<EventImageProps> = ({ src, alt, title, href }) => {
         className="rounded-lg object-cover bg-cover w-full h-[400px]"
       />
       <div className="absolute inset-0 bg-opacity-45 flex items-end p-4 bg-gradient-to-b from-transparent to-dark-himti">
-        <p className="text-2xl font-normal text-brand-main">{title}</p>
+        <p className="text-xl md:text-2xl font-normal text-brand-main">{title}</p>
       </div>
       <div className="absolute bottom-4 right-4">
-        <div className="w-14 h-14 bg-dark-himti flex items-center justify-center rounded">
+        <div className="hidden md:block w-14 h-14 flex items-center justify-center rounded">
           <Icon
-            href="/events"
+            href="/programs"
             icon={"material-symbols:arrow-right-alt"}
             className="w-6 h-6 transform rotate-[-45deg] text-brand-main"
           />
