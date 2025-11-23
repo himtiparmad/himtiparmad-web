@@ -49,7 +49,7 @@ export default function Home() {
             <span className="text-brand-main font-bold"> INNOVARA</span>
           </h1>
 
-          <p className="text-xs sm:text-base md:text-lg text-gray-300 max-w-xl">
+          <p className="text-xs sm:text-base md:text-lg text-gray-200 max-w-xl">
             Welcome to our journey of innovation, collaboration, and excellence
             in Informatics.
           </p>
@@ -68,7 +68,7 @@ export default function Home() {
           </Link>
         </div>
 
-        <p className="max-w-5xl mx-auto text-gray-600">
+        <p className="max-w-5xl mx-auto text-dark-dark">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -200,11 +200,11 @@ export default function Home() {
               />
             );
           })}
-          <Programs
+          {/* <Programs
             title="Explore our programs"
             href="/programs"
             backgroundColor="green"
-          />
+          /> */}
         </div>
       </div>
 

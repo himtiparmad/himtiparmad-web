@@ -17,7 +17,7 @@ function Division() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="mb-4 text-1xl lg:text-2xl font-bold !leading-snug text-gray-700">
+          <h1 className="mb-4 text-1xl lg:text-2xl font-bold !leading-snug text-gray-200">
             2025/2026
             <br />
             <span className="text-[#0066FF] lg:text-6xl text-3xl font-main">
@@ -25,7 +25,7 @@ function Division() {
               Kabinet Innovara
             </span>
           </h1>
-          <p className="font-medium text-gray-500 lg:text-lg">
+          <p className="font-medium text-gray-200 lg:text-lg">
             DKM Paramadina memiliki beberapa divisi yang saling bersinergi untuk
             mewujudkan visi dan misi dakwah kampus. Setiap divisi memiliki peran
             penting dalam menunjang kegiatan keislaman yang aktif, kreatif dan
@@ -60,7 +60,7 @@ function Division() {
           <h3 className="text-[#0066FF] text-3xl font-bold font-main">
             Department Administration
           </h3>
-          <p className="text-gray-500 text-sm mt-2 lg:w-4/5">
+          <p className="text-gray-200 text-sm mt-2 lg:w-4/5">
             Pemimpin organisasi yang bertanggung jawab mengarahkan kebijakan,
             mengelola operasional dan memastikan seluruh program berjalan
             selaras dengan visi dakwah kampus.
@@ -91,7 +91,7 @@ function Division() {
           <h3 className="text-[#0066FF] text-3xl font-bold font-main">
             Department Financial
           </h3>
-          <p className="text-gray-500 text-sm mt-2 lg:w-4/5">
+          <p className="text-gray-200 text-sm mt-2 lg:w-4/5">
             Pemimpin organisasi yang bertanggung jawab mengarahkan kebijakan,
             mengelola operasional dan memastikan seluruh program berjalan
             selaras dengan visi dakwah kampus.
@@ -122,7 +122,7 @@ function Division() {
           <h3 className="text-[#0066FF] text-3xl font-bold font-main">
             Department Public Relations and Media
           </h3>
-          <p className="text-gray-500 text-sm mt-2 lg:w-4/5">
+          <p className="text-gray-200 text-sm mt-2 lg:w-4/5">
             Pemimpin organisasi yang bertanggung jawab mengarahkan kebijakan,
             mengelola operasional dan memastikan seluruh program berjalan
             selaras dengan visi dakwah kampus.
@@ -159,7 +159,7 @@ function Division() {
           <h3 className="text-[#0066FF] text-3xl font-bold font-main">
             Department Research Technology
           </h3>
-          <p className="text-gray-500 text-sm mt-2 lg:w-4/5">
+          <p className="text-gray-200 text-sm mt-2 lg:w-4/5">
             Pemimpin organisasi yang bertanggung jawab mengarahkan kebijakan,
             mengelola operasional dan memastikan seluruh program berjalan
             selaras dengan visi dakwah kampus.
@@ -190,7 +190,7 @@ function Division() {
           <h3 className="text-[#0066FF] text-3xl font-bold font-main">
             Department Creative and Design
           </h3>
-          <p className="text-gray-500 text-sm mt-2 lg:w-4/5">
+          <p className="text-gray-200 text-sm mt-2 lg:w-4/5">
             Pemimpin organisasi yang bertanggung jawab mengarahkan kebijakan,
             mengelola operasional dan memastikan seluruh program berjalan
             selaras dengan visi dakwah kampus.
@@ -227,7 +227,7 @@ function Division() {
           <h3 className="text-[#0066FF] text-3xl font-bold font-main">
             Department Human Capital & Education
           </h3>
-          <p className="text-gray-500 text-sm mt-2 lg:w-4/5">
+          <p className="text-gray-200 text-sm mt-2 lg:w-4/5">
             Pemimpin organisasi yang bertanggung jawab mengarahkan kebijakan,
             mengelola operasional dan memastikan seluruh program berjalan
             selaras dengan visi dakwah kampus.

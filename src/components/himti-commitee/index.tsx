@@ -63,7 +63,7 @@ export default function HimtiCommitteeCards({ members }: Props) {
                   <div className="bg-white/90 text-black px-4 py-2 rounded-xl shadow-lg">
                     <p className="font-bold">{m.name}</p>
                     <p className="text-sm">{m.major}</p>
-                    <p className="text-xs text-gray-600">{m.role}</p>
+                    <p className="text-xs text-gray-200">{m.role}</p>
                   </div>
                 </motion.div>
               )}

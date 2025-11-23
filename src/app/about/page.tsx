@@ -1,27 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 
-const logos1 = [
-  "/logo/himti.svg",
-  "/logo/paramadina.svg",
-  "/logo/google.svg",
-  "/logo/meta.svg",
-];
-
-const logos2 = [
-  "/logo/jenius.svg",
-  "/logo/mandiri.svg",
-  "/logo/bni.svg",
-  "/logo/bri.svg",
-];
-
-const logos3 = [
-  "/logo/tencent.svg",
-  "/logo/microsoft.svg",
-  "/logo/airbnb.svg",
-  "/logo/shopify.svg",
-];
-
 export default function About() {
   return (
     <div className="w-full">
@@ -29,7 +8,7 @@ export default function About() {
         <h2 className="text-2xl font-main lg:text-4xl font-bold text-[#0066FF] mt-12 mb-4">
           Tentang Kami
         </h2>
-        <p className="max-w-5xl mx-auto text-gray-600">
+        <p className="max-w-5xl mx-auto text-dark-dark">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -41,7 +20,7 @@ export default function About() {
         <div className="my-5 mx-auto bg-[#0066FF] w-40 h-2 rounded-full"></div>
       </section>
       <div
-        className="w-full h-[150px] sm:h-[200px] md:h-[420px] lg:h-[600px] xl:h-[900px] mb-[-50px] sm:mb-[-80px] md:mb-[-120px] lg:mb-[-200px]"
+        className="w-full h-[150px] sm:h-[200px] md:h-[420px] lg:h-[600px] xl:h-[900px] mb-[20px] sm:mb-[-80px] md:mb-[-120px] lg:mb-[-200px]"
         style={{
           backgroundImage: "url('/images/background-bottom.svg')",
           backgroundSize: "cover",
@@ -162,7 +141,7 @@ export default function About() {
           <h2 className="mb-4 text-4xl font-bold text-[#0066FF] lg:text-5xl font-main">
             Miftahul Fitriah
           </h2>
-          <p className="mt-2 mb-4 text-gray-600">
+          <p className="mt-2 mb-4 text-dark-dark">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -174,7 +153,7 @@ export default function About() {
         </motion.div>
       </section>
 
-      <section className="px-4 py-12 flex flex-col-reverse lg:flex-row items-center max-w-6xl mx-auto gap-10">
+      <section className="px-4 py-24 flex flex-col-reverse lg:flex-row items-center max-w-6xl mx-auto gap-10">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -188,7 +167,7 @@ export default function About() {
           <h2 className="mb-4 text-4xl font-bold text-[#0066FF] lg:text-5xl font-main">
             Raka Adrian Hartono
           </h2>
-          <p className="mt-2 mb-4 text-gray-600">
+          <p className="mt-2 mb-4 text-dark-dark">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

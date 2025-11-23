@@ -85,7 +85,7 @@ export default function KontakKami() {
               Siap Mendengar dan Membantu
             </span>
           </h1>
-          <p className="font-medium text-gray-500 lg:text-lg">
+          <p className="font-medium text-gray-200 lg:text-lg">
             Kami dari Himti Paramadina siap melayani pertanyaan, masukan, maupun
             aspirasi dari civitas akademika Universitas Paramadina. Baik seputar
             kegiatan keislaman, kajian, donasi, hingga program sosial. Silakan
