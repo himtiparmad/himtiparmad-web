@@ -19,7 +19,7 @@ const organizationData = [
     sections: [
       {
         title: "Nama Kabinet",
-        content: `HIMTI Neocosmic - Nama kabinet untuk HIMTI periode 2024/2025 yang terdiri dari dua kata, yaitu ‘Neo’ yang berarti baru dan ‘Cosmic’ merujuk pada kosmos atau alam semesta. Secara terminologi, Neocosmic berarti alam yang baru. Filosofi kami adalah mengukir jejak di lanskap inovasi, menciptakan dimensi baru, dengan arah gerak baru, yang berfokus pada riset dan pengembangan.`,
+        content: `HIMTI Innovara- Nama kabinet untuk HIMTI periode 2024/2025 yang terdiri dari dua kata, yaitu ‘Neo’ yang berarti baru dan ‘Cosmic’ merujuk pada kosmos atau alam semesta. Secara terminologi, Innovaraberarti alam yang baru. Filosofi kami adalah mengukir jejak di lanskap inovasi, menciptakan dimensi baru, dengan arah gerak baru, yang berfokus pada riset dan pengembangan.`,
       },
       {
         title: "Visi Organisasi",
