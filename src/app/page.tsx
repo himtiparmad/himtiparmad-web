@@ -3,8 +3,6 @@ import Hero from "@/assets/images/hero_himti.png";
 import Button from "@/components/button";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import EventImage from "@/components/event";
-import event1 from "@/assets/images/itfest_4.jpg";
-import event2 from "@/assets/images/reformatics_24.jpg";
 import ArticleCard from "@/components/article";
 import BlogIcon from "@/assets/icons/blog.svg";
 import Link from "next/link";
@@ -109,13 +107,13 @@ export default function Home() {
         </div>
         <div className="w-full flex flex-col lg:flex-row gap-6 mt-14">
           <EventImage
-            src={event1}
+            src={"/images/itfest_4.jpg"}
             href="/programs"
             alt="HIMTI IT Fest Competition 5.0"
             title="HIMTI IT Fest Competition 5.0"
           />
           <EventImage
-            src={event2}
+            src={"/images/reformatics_24.jpg"}
             href="/programs"
             alt="Reformatics 2025"
             title="Reformatics 2025"
